@@ -464,9 +464,9 @@ RunService.Heartbeat:Connect(function(deltaTime)
 end)
 
 local Window = Rayfield:CreateWindow({
-    Name = "最强战斗场 万圣节糖果",
+    Name = "最强战斗场 万圣节糖果(普空死吗)",
     LoadingTitle = "最强战斗场",
-    LoadingSubtitle = "自动捡糖",
+    LoadingSubtitle = "自动用普空老妈子捡糖",
 })
 
 local Tab = Window:CreateTab("自动捡糖")
@@ -481,7 +481,7 @@ Tab:CreateToggle({
 })
 
 Tab:CreateToggle({
-    Name = "自动敲门",
+    Name = "自动用卢卡斯老妈子敲门",
     CurrentValue = true,
     Callback = function(value)
         autoDoor = value
@@ -490,7 +490,7 @@ Tab:CreateToggle({
 })
 
 Tab:CreateToggle({
-    Name = "自动翻垃圾桶",
+    Name = "自动用泡椒老妈子翻垃圾桶",
     CurrentValue = false,
     Callback = function(value)
         autoTrash = value
